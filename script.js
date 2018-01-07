@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function fieldClickHandler() {
-    classList.add('background-color:red', this);
+    this.classList.add('red');
     console.log('Hello', this);
   }
 
