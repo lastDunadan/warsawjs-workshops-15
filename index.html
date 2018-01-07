@@ -3,12 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>TicTacToe</title>
+  <title>WarsawJS - Kolko i Krzyżyk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <script src="script.js"></script>
 </head>
 <body>
+  <center>
+    <h1>Zagraj w kółko i krzyżyk</h1>
+    <br /><br />
+    <div class="ruch">
+      <h3 id="round-info"></h3>
+    </div>
+  </center>
+  <br /><br />
   <div class="board">
     <div></div>
     <div></div>
@@ -20,5 +28,15 @@
     <div></div>
     <div></div>
   </div>
+  <center>
+    <br /><br />
+    <div class="wyniki">
+      <h3>Wyniki:</h3>
+      <p>Czerwone Kółko: <span id="CzerwoneKolko-score"></span></p>
+      <p>Niebieski Krzyżyk: <span id="NiebieskiKrzyzyk-score"></span></p>
+    </div>
+    <br /><br />
+    <button type="button" id="reset-score">Resetuj Wyniki</button>
+  </center>
 </body>
 </html>

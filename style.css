@@ -1,25 +1,72 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  font-family: monospace;
+}
+
+h1 {
+  color: blue;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .board {
-	height: 300px;
-	width: 300px;
-	margin: 0 auto;
-	font-size: 0;
+  margin-top: 150px;
+  height: 330px;
+  width: 330px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.wyniki {
+  width: 340px;
+  height: 110px;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: azure;
+  -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.ruch {
+  width: 340px;
+  height: auto;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: azure;
+  -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .board div {
-	height: 100px;
-	width: 100px;
-	display: inline-block;
-	border: 1px solid grey;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: azure;
+  -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .red {
-	background-color: crimson;
+  background-image: url(circle.png);
 }
 
 .blue {
-	background-color: cornflowerblue;
+  background-image: url(cross.png);
 }
