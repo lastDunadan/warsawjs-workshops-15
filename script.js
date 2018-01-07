@@ -1,5 +1,6 @@
 /*global console*/
 /*global alert*/
+/*global setTimeout*/
 /*global document*/
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -47,20 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 100);
     }
 
-//    if (row1 === 'redredred' || row2 === 'redredred' || row3 === 'redredred' ||
-//        col1 === 'redredred' || col2 === 'redredred' || col3 === 'redredred' ||
-//        diag1 === 'redredred' || diag2 === 'redredred') {
-//      alert('Red Wins!');
-//      return;
-//    }
-//
-//    if (row1 === 'blueblueblue' || row2 === 'blueblueblue' || row3 === 'blueblueblue' ||
-//        col1 === 'blueblueblue' || col2 === 'blueblueblue' || col3 === 'blueblueblue' ||
-//        diag1 === 'blueblueblue' || diag2 === 'blueblueblue') {
-//      alert('Blue Wins!');
-//      return;
-//    }
-
     if (emptyFields === 0) {
       setTimeout(function () {
         alert('Tie');
@@ -72,9 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function fieldClickHandler() {
     var playerClass = playerClasses[currentPlayer];
     this.classList.add(playerClass);
-
-    //Skrocony zapis IF
-    //currentPlayer = currentPlayer === 'playerA' ? 'playerB' : 'playerA';
 
     emptyFields = emptyFields - 1;
 
@@ -98,8 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
     fields.forEach(function (field) {
       field.addEventListener('click', fieldClickHandler);
     });
-
-    //fields.forEach(field (=>) field.addEventListener('click', fieldClickHandler));
   }
 
   initGame();
